@@ -93,8 +93,9 @@ function isLeapYear() {
 function getFactorial(){
   let numD = +prompt("Enter a number");
   number = numD;
- for (i = 0; i>=1; i--){
-   number = number * i;
+  let final = 1;
+ for (i = number; i>=1; i--){
+   final = final * i;
  }
- alert(`The factorial is ${number}`);
+ alert(`The factorial of ${number} is ${final}`);
 }
