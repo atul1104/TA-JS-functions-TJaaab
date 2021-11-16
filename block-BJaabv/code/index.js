@@ -8,8 +8,11 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
+function calculateDogAge(puppyAge = 7, humanAge = 1) {
   // Your code goes here
+  let humanAge = Number;
+ puppyAge = humanAge * 7;
+  return `your puppy's age is ${puppyAge}`;
 }
 
 /*
