@@ -168,11 +168,17 @@ let isGreater = function isGreater(numX, numY){
 // - Write an Arrow Function without curly brackets(if possible)
 let isGreater = (numX, numY) => (numX > numY);
 // - Write an Arrow Function with curly brackets
-let isGreater = (numX, numY) => 
+let isGreater = (numX, numY) => {
+  if (numX > numY){
+    return true;
+  }else{
+    return false;
+  }
+}
 // - Execute the function
-
+isGreater();
 // - Execute the function and store the return value in a variable
-
+let returnValue = isGreater();
 // - What is the typeof returnValue
 
 /* 6.
@@ -186,17 +192,42 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
-
+function oddOrEven(num){
+  if (num % 2 === 0){
+    return `Number is even`;
+  }else{
+    return `Number is odd`;
+  }
+}
 // - Write an anonymous Function Expression
-
+let oddOrEven = function (num){
+  if (num % 2 === 0){
+    return `Number is even`;
+  }else{
+    return `Number is odd`;
+  }
+}
 // - Write an named Function Expression
-
+let oddOrEven = function oddOrEven(num){
+  if (num % 2 === 0){
+    return `Number is even`;
+  }else{
+    return `Number is odd`;
+  }
+}
 // - Write an Arrow Function without curly brackets (hint: use ternary operator)
-
+let oddOrEven = (num) => num % 2 ===0 ? `Number is even` : `Number is odd `;
 // - Write an Arrow Function with curly brackets
-
+let oddOrEven = (num) => {
+   if (num % 2 === 0){
+    return `Number is even`;
+  }else{
+    return `Number is odd`;
+  }
+}
 // - Execute the function
-
+oddOrEven (12);
 // - Execute the function and store the return value in a variable
-
+let returnValue = oddOrEven();
 // - What is the typeof returnValue
+typeof the returnValue is number. 
