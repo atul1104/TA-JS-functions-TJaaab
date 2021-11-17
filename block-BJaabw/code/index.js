@@ -103,13 +103,13 @@ Twist is when user passes anything other than number, or string value you should
 */
 
 function sum(number, string) {
-  if(number + number){
-    return +(number + number);
-  }else if(string + string){
-    return String(`string string`);
-  }else{
-    return `Enter valid input`;
-  }
+  if(typeof number == "number" && typeof string == "number"){
+   return number + string;
+}else if(typeof number == "string" && typeof string == "string"){
+  return number + string;
+}else{
+  return `Enter valid values`;
+}
 }
 
 // Function Test
